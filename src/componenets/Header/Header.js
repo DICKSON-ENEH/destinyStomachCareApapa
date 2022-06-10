@@ -17,7 +17,7 @@ const Header= ()=>{
             <Wrapper>
                <Link to = "/"> <Logo>
                     <img src = "/destiny.jpg" alt = "logo"/>
-  DestinyFoods care
+  DestinyFoods
                 </Logo>
                 </Link>
                 <Navigation>
@@ -25,6 +25,7 @@ const Header= ()=>{
                     <Navs>About</Navs>
                     <Navs>our Services</Navs>
                     <Navs>Contact</Navs>
+                   <Link to ="/signup"> <Navs  >Register</Navs></Link>
                 </Navigation>
             </Wrapper>
             <Navers>

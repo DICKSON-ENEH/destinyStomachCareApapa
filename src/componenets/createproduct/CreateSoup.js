@@ -72,16 +72,16 @@ const CreateSoup = () => {
 		<Container>
 			<Wrapper>
 				<Card>
-					<Bar>
+					{/* <Bar>
 						<BarButton
-							// bg={toggleAdmin ? "rgba(0, 0, 0, 0.7)" : "rgba(0, 0, 0, 0.5)"}
-							// onClick={() => {
-							// 	setToggleAdmin(!toggleAdmin);
-							// }}
+							bg={toggleAdmin ? "rgba(0, 0, 0, 0.7)" : "rgba(0, 0, 0, 0.5)"}
+							onClick={() => {
+								setToggleAdmin(!toggleAdmin);
+							}}
 						>
 							Adding Product to Store
 						</BarButton>
-					</Bar>
+					</Bar> */}
 					<div>
 						{" "}
 						<ImageHolder>
@@ -108,15 +108,15 @@ const CreateSoup = () => {
                                     
                                     </Error>
 							</Holder>
-							<Holder>
+							{/* <Holder>
 								<Label>Product Model</Label>
 								<Input placeholder="Product Model" 
-                                // {...register("model")}
+                                {...register("model")}
                                  />
 								<Error>
-                                    {/* {errors.message && errors?.message.model} */}
+                                    {errors.message && errors?.message.model}
                                 </Error>
-							</Holder>
+							</Holder> */}
 							<Holder>
 								<Label>Product Price</Label>
 								<Input placeholder="Product Price"
@@ -125,7 +125,7 @@ const CreateSoup = () => {
 								{/* <Error>{errors.message && errors?.message.price}</Error> */}
 							</Holder>
 								<Holder>
-								<Label>Product Price</Label>
+								<Label>Description</Label>
 								<Input placeholder="Description"
                                 //  {...register("price")} 
                                  />
@@ -215,10 +215,11 @@ const Input = styled.input`
 	height: 30px;
 	border-radius: 3px;
 	padding-left: 5px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 	::placeholder {
 		font-family: Poppins;
 	}
-	border: 1px solid silver;
+	/* border: 1px solid silver; */
 	outline: none;
 `;
 
@@ -264,6 +265,7 @@ const ImageHolder = styled.div`
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	margin-top:30px;
 `;
 
 const Image = styled.img`
@@ -281,8 +283,7 @@ const Image = styled.img`
 `;
 
 const Card = styled.div`
-	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 	width: 500px;
 	height: 600px;
 	border-radius: 5px;
@@ -307,5 +308,5 @@ const Wrapper = styled.div`
 const Container = styled.div`
 	width: 100%;
 	height: calc(100vh - 70px);
-	padding-top: 70px;
+	padding-top: 40px;
 `;

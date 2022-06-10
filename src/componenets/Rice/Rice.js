@@ -101,7 +101,7 @@ const Rice = () => {
 									
 									</Date>
 								<Button
-								
+								 
 								>
 									Fav
 								</Button>
@@ -109,28 +109,7 @@ const Rice = () => {
 						</TextHolder>
 					</Card>
 						
-					<Card >
-						<Image src="/images/rice.jpg" />
-
-						<TextHolder>
-							<Holder>
-								<Title>title</Title>
-								<Icon />
-							</Holder>
-							<Message>message</Message>
-							<Space />
-							<Holder1>
-								<Date>
-									
-									</Date>
-								<Button
-								
-								>
-									Fav
-								</Button>
-							</Holder1>
-						</TextHolder>
-					</Card>
+			
 			</Wrapper>
 		</Container>
 	);
@@ -142,7 +121,7 @@ const Button = styled.div`
 	transition: all 350ms;
 	color: white;
 	text-decoration: none;
-	background-color: green;
+	background-color: darkorange;
 	padding: 5px 15px;
 
 	:hover {
@@ -202,7 +181,7 @@ const Image = styled.img`
 
 const Card = styled.div`
 	margin: 10px;
-	width: 280px;
+	width: 300px;
 	min-height: 320px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	border-radius: 10px 10px 0 0;
